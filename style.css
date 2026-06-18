@@ -1,29 +1,166 @@
 /* Arlaine Pastries - Custom Styles */
 
+:root {
+  --cream: #f5f0e8;
+  --cream-dark: #ede5d8;
+  --black: #1a1208;
+  --gold: #b8965a;
+  --text: #3d2b1f;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
+  background-color: var(--cream);
+  color: var(--text);
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff !important;
 }
 
 .navbar-brand {
   font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--text) !important;
+  font-size: 1.4rem;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text) !important;
   letter-spacing: 0.5px;
 }
 
-.hero-section h1 {
-  font-weight: 700;
+.navbar-nav .nav-link:hover {
+  color: var(--gold) !important;
 }
 
+.navbar-nav .nav-link.active {
+  color: var(--gold) !important;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero-banner {
+  background-color: var(--cream);
+  color: var(--text);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero-banner h1 {
+  color: var(--text);
+}
+
+.hero-banner {
+  background-color: var(--cream-dark);
+  color: var(--text);
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background-color: #ffffff;
+}
+
+/* Page Banners - inner pages */
+.page-banner {
+  background-color: var(--cream-dark);
+  color: var(--text);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.page-banner h1 {
+  color: var(--text);
+}
+
+.page-banner p {
+  color: var(--text);
+  opacity: 0.75;
+}
+
+/* Sections */
+.bg-light {
+  background-color: var(--cream-dark) !important;
+}
+
+/* Cards */
 .card {
-  border-radius: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--cream-dark);
+  background-color: #ffffff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.04);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+/* Buttons */
+.btn-warning {
+  background-color: var(--gold) !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 10px 28px;
+}
+
+.btn-warning:hover {
+  background-color: var(--black) !important;
+  color: #ffffff !important;
+}
+
+.btn-outline-light {
+  border-color: var(--text) !important;
+  color: var(--text) !important;
+  border-radius: 50px;
+  padding: 10px 28px;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--text) !important;
+  color: #ffffff !important;
+}
+
+.btn-outline-dark {
+  border-color: var(--gold) !important;
+  color: var(--gold) !important;
+  border-radius: 50px;
+  padding: 10px 28px;
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--gold) !important;
+  color: #ffffff !important;
+}
+
+/* Tables */
+thead.table-dark {
+  background-color: var(--black) !important;
+}
+
+.table-hover tbody tr:hover {
+  background-color: var(--cream-dark);
+}
+
+/* Footer */
+footer {
+  background-color: var(--black) !important;
+  color: #ffffff !important;
+}
+
+footer p {
+  color: #ffffff !important;
+  margin: 0.3rem 0;
 }
 
 footer a {
+  color: var(--gold) !important;
   text-decoration: none;
 }
 
