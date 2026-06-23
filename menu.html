@@ -26,6 +26,7 @@
         <a class="nav-link" href="blog.html">Blog</a>
         <a class="nav-link" href="contact.html">Contact</a>
         <a class="nav-link" href="faq.html">FAQ</a>
+        <button id="darkModeToggle" onclick="toggleDarkMode()">Dark Mode</button>
       </div>
     </div>
   </div>
@@ -37,98 +38,152 @@
   <p>Freshly baked cakes and pastries, made to order</p>
 </div>
 
-<!-- Cakes Table -->
+<!-- Cakes Section -->
 <section class="py-5">
   <div class="container">
-    <h2 class="text-center mb-4">Cakes</h2>
-    <table class="table table-bordered table-hover">
+
+    <div class="menu-section-label">
+      <h2>Cakes</h2>
+      <div class="menu-divider"></div>
+    </div>
+
+    <table class="table table-hover menu-table">
       <thead class="my-table-head">
         <tr>
           <th>Item</th>
           <th>Description</th>
+          <th>Serves</th>
           <th>Price</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Chocolate Fudge Cake</td>
-          <td>Rich chocolate sponge layered with fudge frosting</td>
-          <td>KSh 1,200</td>
+          <td>
+            <span class="menu-item-name">Chocolate Fudge Cake</span><br>
+            <span class="menu-item-sub">Rich chocolate sponge layered with fudge frosting</span>
+          </td>
+          <td class="menu-item-sub">Whole cake</td>
+          <td class="menu-item-sub">8–10 people</td>
+          <td class="menu-price">KSh 1,200</td>
         </tr>
         <tr>
-          <td>Vanilla Bean Cake</td>
-          <td>Light vanilla sponge with smooth buttercream icing</td>
-          <td>KSh 1,000</td>
+          <td>
+            <span class="menu-item-name">Vanilla Bean Cake</span><br>
+            <span class="menu-item-sub">Light vanilla sponge with smooth buttercream icing</span>
+          </td>
+          <td class="menu-item-sub">Whole cake</td>
+          <td class="menu-item-sub">8–10 people</td>
+          <td class="menu-price">KSh 1,000</td>
         </tr>
         <tr>
-          <td>Red Velvet Cake</td>
-          <td>Classic red velvet with cream cheese frosting</td>
-          <td>KSh 1,300</td>
+          <td>
+            <span class="menu-item-name">Red Velvet Cake</span><br>
+            <span class="menu-item-sub">Classic red velvet with cream cheese frosting</span>
+          </td>
+          <td class="menu-item-sub">Whole cake</td>
+          <td class="menu-item-sub">8–10 people</td>
+          <td class="menu-price">KSh 1,300</td>
         </tr>
         <tr>
-          <td>Lemon Drizzle Cake</td>
-          <td>Moist lemon sponge with a sweet tangy glaze</td>
-          <td>KSh 1,100</td>
+          <td>
+            <span class="menu-item-name">Lemon Drizzle Cake</span><br>
+            <span class="menu-item-sub">Moist lemon sponge with a sweet tangy glaze</span>
+          </td>
+          <td class="menu-item-sub">Whole cake</td>
+          <td class="menu-item-sub">8–10 people</td>
+          <td class="menu-price">KSh 1,100</td>
         </tr>
         <tr>
-          <td>Carrot Cake</td>
-          <td>Spiced carrot cake topped with cream cheese frosting</td>
-          <td>KSh 1,150</td>
+          <td>
+            <span class="menu-item-name">Carrot Cake</span><br>
+            <span class="menu-item-sub">Spiced carrot cake topped with cream cheese frosting</span>
+          </td>
+          <td class="menu-item-sub">Whole cake</td>
+          <td class="menu-item-sub">8–10 people</td>
+          <td class="menu-price">KSh 1,150</td>
         </tr>
       </tbody>
     </table>
+
   </div>
 </section>
 
-<!-- Pastries Table -->
-<section class="py-5">
+<!-- Pastries Section -->
+<section class="py-5 bg-light">
   <div class="container">
-    <h2 class="text-center mb-4">Pastries</h2>
-    <table class="table table-bordered table-hover">
+
+    <div class="menu-section-label">
+      <h2>Pastries</h2>
+      <div class="menu-divider"></div>
+    </div>
+
+    <table class="table table-hover menu-table">
       <thead class="my-table-head">
         <tr>
           <th>Item</th>
           <th>Description</th>
+          <th>Sold As</th>
           <th>Price</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Butter Croissant</td>
-          <td>Flaky, golden and buttery, baked fresh daily</td>
-          <td>KSh 180</td>
+          <td>
+            <span class="menu-item-name">Butter Croissant</span><br>
+            <span class="menu-item-sub">Flaky, golden and buttery, baked fresh daily</span>
+          </td>
+          <td class="menu-item-sub">Individual</td>
+          <td class="menu-item-sub">Per piece</td>
+          <td class="menu-price">KSh 180</td>
         </tr>
         <tr>
-          <td>Cinnamon Roll</td>
-          <td>Soft roll swirled with cinnamon and topped with glaze</td>
-          <td>KSh 200</td>
+          <td>
+            <span class="menu-item-name">Cinnamon Roll</span><br>
+            <span class="menu-item-sub">Soft roll swirled with cinnamon and topped with glaze</span>
+          </td>
+          <td class="menu-item-sub">Individual</td>
+          <td class="menu-item-sub">Per piece</td>
+          <td class="menu-price">KSh 200</td>
         </tr>
         <tr>
-          <td>Red Velvet Cupcake</td>
-          <td>Moist cupcake topped with cream cheese frosting</td>
-          <td>KSh 150</td>
+          <td>
+            <span class="menu-item-name">Red Velvet Cupcake</span><br>
+            <span class="menu-item-sub">Moist cupcake topped with cream cheese frosting</span>
+          </td>
+          <td class="menu-item-sub">Individual</td>
+          <td class="menu-item-sub">Per piece</td>
+          <td class="menu-price">KSh 150</td>
         </tr>
         <tr>
-          <td>Cheese Danish</td>
-          <td>Flaky pastry filled with sweet cream cheese</td>
-          <td>KSh 220</td>
+          <td>
+            <span class="menu-item-name">Cheese Danish</span><br>
+            <span class="menu-item-sub">Flaky pastry filled with sweet cream cheese</span>
+          </td>
+          <td class="menu-item-sub">Individual</td>
+          <td class="menu-item-sub">Per piece</td>
+          <td class="menu-price">KSh 220</td>
         </tr>
         <tr>
-          <td>Blueberry Muffin</td>
-          <td>Soft muffin packed with fresh blueberries</td>
-          <td>KSh 160</td>
+          <td>
+            <span class="menu-item-name">Blueberry Muffin</span><br>
+            <span class="menu-item-sub">Soft muffin packed with fresh blueberries</span>
+          </td>
+          <td class="menu-item-sub">Individual</td>
+          <td class="menu-item-sub">Per piece</td>
+          <td class="menu-price">KSh 160</td>
         </tr>
       </tbody>
     </table>
+
   </div>
 </section>
 
-<!-- Order Note -->
-<section class="py-5 text-center">
-  <div class="container">
+<!-- Order CTA -->
+<section class="py-5 menu-order-cta">
+  <div class="container text-center">
     <h3>Ready to Order?</h3>
-    <p>We currently take orders online for delivery or pickup in Nairobi.</p>
-    <a href="contact.html" class="btn btn-warning btn-lg">Contact Us to Order</a>
+    <p class="mt-2">We currently take orders online for delivery or pickup in Nairobi.</p>
+    <a href="contact.html" class="btn btn-warning btn-lg mt-3">Contact Us to Order</a>
   </div>
 </section>
 
@@ -141,7 +196,6 @@
   </p>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="main.js"></script>
 
