@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Arlaine Pastries</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Arlaine Pastries</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="menu.html">Menu</a>
+        <a class="nav-link active" href="shop.html">Shop</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="blog.html">Blog</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="faq.html">FAQ</a>
+        <button id="darkModeToggle" onclick="toggleDarkMode()">Dark Mode</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Banner -->
+<div class="page-banner">
+  <h1>Our Shop</h1>
+  <p>Order fresh cakes and pastries for delivery or pickup in Nairobi</p>
+</div>
+
+<!-- Filter Buttons -->
+<section class="py-4 text-center" style="padding-bottom: 0 !important;">
+  <div class="container">
+    <button class="shop-filter-btn active" onclick="filterProducts('all')">All</button>
+    <button class="shop-filter-btn" onclick="filterProducts('cakes')">Cakes</button>
+    <button class="shop-filter-btn" onclick="filterProducts('pastries')">Pastries</button>
+  </div>
+</section>
+
+<!-- Products Grid -->
+<section class="py-5">
+  <div class="container">
+    <div class="row" id="productsGrid">
+
+      <!-- Cake 1 -->
+      <div class="col-md-4 mb-4 product-item" data-category="cakes">
+        <div class="card h-100">
+          <img src="images/chocolate-cake.jpg" alt="Chocolate Fudge Cake">
+          <div class="card-body text-center">
+            <span class="shop-badge">Cake</span>
+            <h5 class="card-title mt-2">Chocolate Fudge Cake</h5>
+            <p class="card-text">Rich, moist chocolate sponge layered with fudge frosting. Perfect for birthdays and celebrations.</p>
+            <p class="shop-price">KSh 1,200</p>
+            <a href="contact.html" class="btn btn-warning w-100">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cake 2 -->
+      <div class="col-md-4 mb-4 product-item" data-category="cakes">
+        <div class="card h-100">
+          <img src="images/vanilla-cake.jpg" alt="Vanilla Bean Cake">
+          <div class="card-body text-center">
+            <span class="shop-badge">Cake</span>
+            <h5 class="card-title mt-2">Vanilla Bean Cake</h5>
+            <p class="card-text">Light, fluffy vanilla sponge with smooth buttercream icing. A timeless classic.</p>
+            <p class="shop-price">KSh 1,000</p>
+            <a href="contact.html" class="btn btn-warning w-100">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cake 3 -->
+      <div class="col-md-4 mb-4 product-item" data-category="cakes">
+        <div class="card h-100">
+          <img src="images/red-velvet-cake.jpg" alt="Red Velvet Cake">
+          <div class="card-body text-center">
+            <span class="shop-badge">Cake</span>
+            <h5 class="card-title mt-2">Red Velvet Cake</h5>
+            <p class="card-text">Classic red velvet sponge topped with rich cream cheese frosting.</p>
+            <p class="shop-price">KSh 1,300</p>
+            <a href="contact.html" class="btn btn-warning w-100">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cake 4 -->
+      <div class="col-md-4 mb-4 product-item" data-category="cakes">
+        <div class="card h-100">
+          <img src="images/lemon-cake.jpg" alt="Lemon Drizzle Cake">
+          <div class="card-body text-center">
+            <span class="shop-badge">Cake</span>
+            <h5 class="card-title mt-2">Lemon Drizzle Cake</h5>
+            <p class="card-text">Moist lemon sponge with a sweet tangy glaze. Light and refreshing.</p>
+            <p class="shop-price">KSh 1,100</p>
+            <a href="contact.html" class="btn btn-warning w-100">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cake 5 -->
+      <div class="col-md-4 mb-4 product-item" data-category="cakes">
+        <div class="card h-100">
+          <img src="images/carrot-cake.jpg" alt="Carrot Cake">
+          <div class="card-body text-center">
+            <span class="shop-badge">Cake</span>
+            <h5 class="card-title mt-2">Carrot Cake</h5>
+            <p class="card-text">Spiced carrot cake topped with a generous layer of cream cheese frosting.</p>
+            <p class="shop-price">KSh 1,150</p>
+            <a href="contact.html" class="btn btn-warning w-100">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pastry 1 -->
+      <div class="col-md-4 mb-4 product-item" data-category="pastries">
+        <div class="card h-100">
+          <img src="images/croissant.jpg" alt="Butter Croissant">
+          <div class="card-body text-center">
+            <span class="shop-badge pastry-badge">Pastry</span>
+            <h5 class="card-title mt-2">Butter Croissant</h5>
+            <p class="card-text">Flaky, golden and buttery. Baked fresh daily and best enjoyed warm.</p>
+            <p class="shop-price">KSh 180</p>
+            <a href="contact.html" class="btn btn-warning w-100">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pastry 2 -->
+      <div class="col-md-4 mb-4 product-item" data-category="pastries">
+        <div class="card h-100">
+          <img src="images/cinnamon-roll.jpg" alt="Cinnamon Roll">
+          <div class="card-body text-center">
+            <span class="shop-badge pastry-badge">Pastry</span>
+            <h5 class="card-title mt-2">Cinnamon Roll</h5>
+            <p class="card-text">Soft dough swirled with cinnamon and topped with a sweet vanilla glaze.</p>
+            <p class="shop-price">KSh 200</p>
+            <a href="contact.html" class="btn btn-warning w-100">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pastry 3 -->
+      <div class="col-md-4 mb-4 product-item" data-category="pastries">
+        <div class="card h-100">
+          <img src="images/cupcake.jpg" alt="Red Velvet Cupcake">
+          <div class="card-body text-center">
+            <span class="shop-badge pastry-badge">Pastry</span>
+            <h5 class="card-title mt-2">Red Velvet Cupcake</h5>
+            <p class="card-text">Moist red velvet cupcake topped with cream cheese frosting. Sold per piece.</p>
+            <p class="shop-price">KSh 150</p>
+            <a href="contact.html" class="btn btn-warning w-100">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pastry 4 -->
+      <div class="col-md-4 mb-4 product-item" data-category="pastries">
+        <div class="card h-100">
+          <img src="images/cheese-danish.jpg" alt="Cheese Danish">
+          <div class="card-body text-center">
+            <span class="shop-badge pastry-badge">Pastry</span>
+            <h5 class="card-title mt-2">Cheese Danish</h5>
+            <p class="card-text">Flaky pastry filled with sweet, smooth cream cheese. A bakery favourite.</p>
+            <p class="shop-price">KSh 220</p>
+            <a href="contact.html" class="btn btn-warning w-100">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pastry 5 -->
+      <div class="col-md-4 mb-4 product-item" data-category="pastries">
+        <div class="card h-100">
+          <img src="images/muffin.jpg" alt="Blueberry Muffin">
+          <div class="card-body text-center">
+            <span class="shop-badge pastry-badge">Pastry</span>
+            <h5 class="card-title mt-2">Blueberry Muffin</h5>
+            <p class="card-text">Soft, fluffy muffin packed with fresh blueberries. Great for breakfast or a snack.</p>
+            <p class="shop-price">KSh 160</p>
+            <a href="contact.html" class="btn btn-warning w-100">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Order Note -->
+<section class="py-5 menu-order-cta text-center">
+  <div class="container">
+    <h3>How to Order</h3>
+    <p class="mt-2">We take orders online for delivery or pickup across Nairobi. Contact us via the form or WhatsApp to place your order.</p>
+    <a href="contact.html" class="btn btn-warning btn-lg mt-3">Place an Order</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-4">
+  <p>&copy; 2026 Arlaine Pastries. All rights reserved.</p>
+  <p>
+    <a href="contact.html">Contact Us</a> |
+    <a href="faq.html">FAQ</a>
+  </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
