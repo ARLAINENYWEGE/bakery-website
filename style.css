@@ -1,7 +1,5 @@
 /* Arlaine Pastries - Custom Styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 :root {
   --cream: #f7f2ea;
   --black: #1a1208;
@@ -10,15 +8,21 @@
   --text: #2e2418;
 }
 
+
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, Verdana, sans-serif;
   background-color: var(--cream);
   color: var(--text);
   line-height: 1.7;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Poppins', sans-serif;
+h1, h2, h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+}
+
+h4, h5, h6 {
+  font-family: Arial, Verdana, sans-serif;
   font-weight: 600;
 }
 
@@ -33,56 +37,101 @@ p {
   text-align: center;
 }
 
-/* Navbar */
-.navbar {
-  background-color: #ffffff !important;
+
+nav.navbar {
+  background-color: #1a1208 !important;
   padding: 20px 0;
 }
 
-.navbar-brand {
+nav.navbar .navbar-brand {
+  font-family: Georgia, serif;
   font-weight: 700;
+  font-size: 1.8rem;
+  color: #b8965a !important;
   letter-spacing: 0.5px;
-  color: var(--text) !important;
-  font-size: 1.4rem;
 }
 
-.navbar-nav .nav-link {
-  color: var(--text) !important;
+nav.navbar .nav-link {
+  color: #d9cdb8 !important;
   font-weight: 500;
   margin: 0 10px;
 }
 
-.navbar-nav .nav-link:hover {
-  color: var(--gold-dark) !important;
+nav.navbar .nav-link:hover {
+  color: #b8965a !important;
 }
 
-.navbar-nav .nav-link.active {
-  color: var(--gold-dark) !important;
+nav.navbar .nav-link.active {
+  color: #b8965a !important;
   font-weight: 600;
 }
 
-/* Hero */
+.navbar-toggler {
+  border-color: #b8965a !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* HERO BANNER */
 .hero-banner {
-  background-color: var(--cream);
-  color: var(--text);
+  background-color: #1a1208;
+  color: #f7f2ea;
   padding: 140px 0 120px;
   text-align: center;
 }
 
 .hero-banner h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  color: var(--text);
+  color: #f7f2ea;
   margin-bottom: 1rem;
 }
 
-/* Welcome Section */
+.hero-banner p {
+  color: #d9cdb8;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/*  PAGE BANNER  */
+.page-banner {
+  background-color: #1a1208;
+  color: #f7f2ea;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.page-banner h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #f7f2ea;
+}
+
+.page-banner p {
+  color: #d9cdb8;
+  text-align: center;
+}
+
+/* SECTIONS */
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
 .welcome-section {
   padding: 100px 0;
 }
 
 .welcome-section h2 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   margin-bottom: 1.2rem;
 }
 
@@ -93,32 +142,7 @@ p {
   text-align: center;
 }
 
-/* Page Banners */
-.page-banner {
-  background-color: var(--cream);
-  color: var(--text);
-  padding: 100px 0;
-  text-align: center;
-}
-
-.page-banner h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-/* Sections - more breathing room */
-section {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  font-weight: 600;
-}
-
-/* Cards - flatter, simpler */
+/* CARDS */
 .card {
   border-radius: 8px;
   border: 1px solid rgba(0,0,0,0.08);
@@ -132,7 +156,9 @@ section h2 {
 }
 
 .card-title {
+  font-family: Arial, sans-serif;
   font-weight: 600;
+  font-size: 1rem;
 }
 
 .card p,
@@ -140,9 +166,17 @@ section h2 {
   text-align: left;
 }
 
-/* Buttons - flatter, simpler */
+.card img {
+  border-radius: 8px 8px 0 0;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* BUTTONS */
+  
 .btn-warning {
-  background-color: var(--gold) !important;
+  background-color: #b8965a !important;
   border: none !important;
   color: #ffffff !important;
   font-weight: 500;
@@ -151,59 +185,57 @@ section h2 {
 }
 
 .btn-warning:hover {
-  background-color: var(--black) !important;
+  background-color: #1a1208 !important;
   color: #ffffff !important;
 }
 
 .btn-outline-light {
-  border: 1px solid var(--text) !important;
-  color: var(--text) !important;
+  border: 1px solid #b8965a !important;
+  color: #b8965a !important;
   border-radius: 6px;
   padding: 11px 30px;
   font-weight: 500;
 }
 
 .btn-outline-light:hover {
-  background-color: var(--text) !important;
+  background-color: #b8965a !important;
   color: #ffffff !important;
 }
 
 .btn-outline-dark {
-  border: 1px solid var(--gold) !important;
-  color: var(--gold-dark) !important;
+  border: 1px solid #b8965a !important;
+  color: #9c7c45 !important;
   border-radius: 6px;
   padding: 11px 30px;
   font-weight: 500;
 }
 
 .btn-outline-dark:hover {
-  background-color: var(--gold) !important;
+  background-color: #b8965a !important;
   color: #ffffff !important;
 }
 
-/* Tables */
+/* TABLES (general) */
 .table {
   background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
 }
 
-
 table thead.my-table-head tr th {
-  background-color: var(--black) !important;
+  background-color: #1a1208 !important;
   color: #ffffff !important;
-  border-color: var(--black) !important;
+  border-color: #1a1208 !important;
   font-weight: 600;
 }
 
-
 .table-hover tbody tr:hover {
-  background-color: var(--cream);
+  background-color: #f7f2ea;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
-  background-color: var(--black) !important;
+  background-color: #1a1208 !important;
   color: #ffffff !important;
   padding: 50px 0;
   text-align: center;
@@ -217,10 +249,120 @@ footer p {
 }
 
 footer a {
-  color: var(--gold) !important;
+  color: #b8965a !important;
   text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* MENU PAGE */
+.menu-section-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.menu-section-label h2 {
+  margin: 0;
+  white-space: nowrap;
+  font-size: 1.8rem;
+  color: #1a1208;
+}
+
+.menu-divider {
+  flex: 1;
+  height: 2px;
+  background-color: #b8965a;
+  opacity: 0.5;
+}
+
+.menu-item-name {
+  font-weight: 600;
+  color: #1a1208;
+  font-size: 0.95rem;
+}
+
+.menu-item-sub {
+  color: #6b5c44;
+  font-size: 0.83rem;
+}
+
+.menu-price {
+  font-weight: 600;
+  color: #9c7c45;
+  white-space: nowrap;
+}
+
+.menu-order-cta {
+  background-color: #1a1208 !important;
+}
+
+.menu-order-cta h3 {
+  color: #f7f2ea;
+}
+
+.menu-order-cta p {
+  color: #d9cdb8;
+  text-align: center;
+}
+
+/*  DARK MODE TOGGLE*/
+#darkModeToggle {
+  background: none;
+  border: 1px solid #b8965a;
+  color: #b8965a;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-left: 15px;
+  font-family: Arial, sans-serif;
+}
+
+#darkModeToggle:hover {
+  background-color: #b8965a;
+  color: white;
+}
+
+/*  DARK MODE */
+body.dark-mode {
+  background-color: #0f0c06;
+  color: #f0e8d8;
+}
+
+body.dark-mode .card {
+  background-color: #1f1a10;
+  border-color: rgba(255,255,255,0.1);
+  color: #f0e8d8;
+}
+
+body.dark-mode .card-text,
+body.dark-mode .card p {
+  color: #d9cdb8;
+}
+
+body.dark-mode section,
+body.dark-mode .welcome-section,
+body.dark-mode .bg-light {
+  background-color: #0f0c06 !important;
+}
+
+body.dark-mode .table {
+  background-color: #1f1a10;
+  color: #f0e8d8;
+}
+
+body.dark-mode .table-hover tbody tr:hover {
+  background-color: #2a2211;
+}
+
+body.dark-mode .menu-item-name {
+  color: #f0e8d8;
+}
+
+body.dark-mode .menu-section-label h2 {
+  color: #f0e8d8;
 }
