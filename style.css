@@ -8,7 +8,9 @@
   --text: #2e2418;
 }
 
-
+/* ========================
+   BASE
+======================== */
 body {
   font-family: Arial, Verdana, sans-serif;
   background-color: var(--cream);
@@ -37,7 +39,9 @@ p {
   text-align: center;
 }
 
-
+/* ========================
+   NAVBAR
+======================== */
 nav.navbar {
   background-color: #1a1208 !important;
   padding: 20px 0;
@@ -74,7 +78,9 @@ nav.navbar .nav-link.active {
   filter: invert(1);
 }
 
-/* HERO BANNER */
+/* ========================
+   HERO BANNER
+======================== */
 .hero-banner {
   background-color: #1a1208;
   color: #f7f2ea;
@@ -95,7 +101,9 @@ nav.navbar .nav-link.active {
   text-align: center;
 }
 
-/*  PAGE BANNER  */
+/* ========================
+   PAGE BANNER (all inner pages)
+======================== */
 .page-banner {
   background-color: #1a1208;
   color: #f7f2ea;
@@ -114,7 +122,9 @@ nav.navbar .nav-link.active {
   text-align: center;
 }
 
-/* SECTIONS */
+/* ========================
+   SECTIONS
+======================== */
 section {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -142,7 +152,9 @@ section h2 {
   text-align: center;
 }
 
-/* CARDS */
+/* ========================
+   CARDS
+======================== */
 .card {
   border-radius: 8px;
   border: 1px solid rgba(0,0,0,0.08);
@@ -173,8 +185,9 @@ section h2 {
   width: 100%;
 }
 
-/* BUTTONS */
-  
+/* ========================
+   BUTTONS
+======================== */
 .btn-warning {
   background-color: #b8965a !important;
   border: none !important;
@@ -215,7 +228,9 @@ section h2 {
   color: #ffffff !important;
 }
 
-/* TABLES (general) */
+/* ========================
+   TABLES (general)
+======================== */
 .table {
   background-color: #ffffff;
   border-radius: 8px;
@@ -233,7 +248,9 @@ table thead.my-table-head tr th {
   background-color: #f7f2ea;
 }
 
-/* FOOTER */
+/* ========================
+   FOOTER
+======================== */
 footer {
   background-color: #1a1208 !important;
   color: #ffffff !important;
@@ -257,7 +274,9 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* MENU PAGE */
+/* ========================
+   MENU PAGE
+======================== */
 .menu-section-label {
   display: flex;
   align-items: center;
@@ -309,7 +328,9 @@ footer a:hover {
   text-align: center;
 }
 
-/*  DARK MODE TOGGLE*/
+/* ========================
+   DARK MODE TOGGLE
+======================== */
 #darkModeToggle {
   background: none;
   border: 1px solid #b8965a;
@@ -327,7 +348,9 @@ footer a:hover {
   color: white;
 }
 
-/*  DARK MODE */
+/* ========================
+   DARK MODE
+======================== */
 body.dark-mode {
   background-color: #0f0c06;
   color: #f0e8d8;
@@ -365,4 +388,112 @@ body.dark-mode .menu-item-name {
 
 body.dark-mode .menu-section-label h2 {
   color: #f0e8d8;
+}
+
+/* ========================
+   SHOP PAGE
+======================== */
+.shop-filter-btn {
+  background: none;
+  border: 1px solid #b8965a;
+  color: #9c7c45;
+  border-radius: 6px;
+  padding: 8px 24px;
+  margin: 0 6px;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.shop-filter-btn:hover {
+  background-color: #b8965a;
+  color: white;
+}
+
+.shop-filter-btn.active {
+  background-color: #1a1208;
+  color: #f7f2ea;
+  border-color: #1a1208;
+}
+
+.shop-badge {
+  display: inline-block;
+  background-color: #1a1208;
+  color: #f7f2ea;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.pastry-badge {
+  background-color: #b8965a;
+}
+
+.shop-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #9c7c45;
+  margin: 10px 0;
+}
+
+.product-item {
+  transition: opacity 0.3s ease;
+}
+
+.product-item.hidden {
+  display: none;
+}
+
+/* ========================
+   GALLERY PAGE
+======================== */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(26, 18, 8, 0.75);
+  color: #f7f2ea;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 0 0 8px 8px;
+}
+
+.gallery-overlay p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  color: #f7f2ea;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
 }
