@@ -497,33 +497,34 @@ body.dark-mode .menu-section-label h2 {
 .gallery-item:hover .gallery-overlay {
   opacity: 1;
 }
-* ========================
+
+/* ========================
    CONTACT PAGE
 ======================== */
 .contact-info-item {
   margin-bottom: 1.5rem;
 }
- 
+
 .contact-info-item h5 {
   font-weight: 600;
   color: #1a1208;
   margin-bottom: 0.2rem;
 }
- 
+
 .contact-info-item p {
   color: #6b5c44;
   margin: 0;
 }
- 
+
 .contact-info-item a {
   color: #b8965a;
   text-decoration: none;
 }
- 
+
 .contact-info-item a:hover {
   text-decoration: underline;
 }
- 
+
 .form-control {
   border: 1px solid rgba(0,0,0,0.15);
   border-radius: 6px;
@@ -531,15 +532,63 @@ body.dark-mode .menu-section-label h2 {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
 }
- 
+
 .form-control:focus {
   border-color: #b8965a;
   box-shadow: 0 0 0 3px rgba(184,150,90,0.15);
 }
- 
+
 .form-label {
   font-weight: 600;
   font-size: 0.9rem;
   color: #1a1208;
 }
- 
+
+/* ========================
+   FAQ PAGE
+======================== */
+.faq-item {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 8px !important;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.faq-item .accordion-button {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1a1208;
+  background-color: #ffffff;
+}
+
+.faq-item .accordion-button:not(.collapsed) {
+  background-color: #1a1208;
+  color: #f7f2ea;
+  box-shadow: none;
+}
+
+.faq-item .accordion-button:not(.collapsed)::after {
+  filter: invert(1);
+}
+
+.faq-item .accordion-button:focus {
+  box-shadow: none;
+  border-color: #b8965a;
+}
+
+.faq-item .accordion-body {
+  font-size: 0.9rem;
+  color: #6b5c44;
+  background-color: #faf6ef;
+  line-height: 1.8;
+}
+
+.faq-item .accordion-body a {
+  color: #b8965a;
+  text-decoration: none;
+}
+
+.faq-item .accordion-body a:hover {
+  text-decoration: underline;
+}
