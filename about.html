@@ -26,6 +26,7 @@
         <a class="nav-link" href="blog.html">Blog</a>
         <a class="nav-link" href="contact.html">Contact</a>
         <a class="nav-link" href="faq.html">FAQ</a>
+        <button id="darkModeToggle" onclick="toggleDarkMode()">Dark Mode</button>
       </div>
     </div>
   </div>
@@ -40,33 +41,83 @@
 <!-- Our Story Section -->
 <section class="py-5">
   <div class="container">
-    <h2 class="text-center mb-4">Our Story</h2>
-    <div class="mx-auto" style="max-width: 750px;">
-      <p>Arlaine Pastries is a Nairobi-based bakery built around a simple idea: good cake and good pastries shouldn't be hard to find. What started as a personal goal has grown into a brand focused on quality baking, made fresh and made with care.</p>
-      <p>Right now, Arlaine Pastries focuses on cakes and pastries, with plans to introduce coffee and fresh juices as the business grows. Every product is made with attention to detail, using simple, honest ingredients.</p>
+    <div class="row align-items-center">
+
+      <div class="col-md-6 mb-4">
+        <h2 class="mb-3">Our Story</h2>
+        <p>Arlaine Pastries is a Nairobi-based bakery built around a simple idea: good cake and good pastries shouldn't be hard to find.</p>
+        <p>What started as a personal passion has grown into a brand focused on quality baking — made fresh, made with care, and made with honest ingredients. Every product reflects attention to detail and a genuine love for the craft.</p>
+        <p>We currently focus on cakes and pastries, with plans to introduce coffee and fresh juices as the business grows. For now, we are committed to getting every bake right.</p>
+        <a href="shop.html" class="btn btn-warning mt-2">Browse Our Products</a>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <img src="images/bakery-kitchen.jpg" alt="Arlaine Pastries kitchen" class="img-fluid about-img">
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- Founder Section -->
-<section class="py-5">
-  <div class="container text-center">
-    <h2 class="mb-4">Meet The Founder</h2>
-    <h5>Arlaine Nywege</h5>
-    <img src="images/about-baker.jpg" alt="Arlaine Nywege">
-    <p class="text-center">Founder & Baker, Nairobi</p>
-    <p class="mt-2 mx-auto" style="max-width: 600px; text-align: left;">Arlaine Pastries was started with a vision to bring quality, freshly baked cakes and pastries to Nairobi — with coffee and juices coming soon.</p>
+<!-- What We Stand For -->
+<section class="py-5 about-values-section">
+  <div class="container">
+    <h2 class="text-center mb-5">What We Stand For</h2>
+    <div class="row text-center">
+
+      <div class="col-md-4 mb-4">
+        <div class="about-value-item">
+          <h5>Fresh Always</h5>
+          <p>Everything at Arlaine Pastries is baked to order. We do not keep sitting products — your order is made fresh when you place it.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="about-value-item">
+          <h5>Honest Ingredients</h5>
+          <p>We use simple, real ingredients in everything we bake. No artificial flavours, no shortcuts — just good baking done properly.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="about-value-item">
+          <h5>Made With Care</h5>
+          <p>Every order gets our full attention. Whether it is one cupcake or a custom wedding cake, we treat every bake the same way.</p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
-<!-- Get In Touch Section -->
+<!-- Meet the Founder -->
 <section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-md-3 text-center mb-4">
+        <img src="images/about-baker.jpg" alt="Arlaine Nywege - Founder" class="about-founder-img">
+      </div>
+
+      <div class="col-md-9 mb-4">
+        <h2 class="mb-1">Meet the Founder</h2>
+        <h5 class="about-founder-title mb-3">Arlaine Nywege — Founder &amp; Baker, Nairobi</h5>
+        <p>Arlaine Pastries was started with a vision to bring quality, freshly baked cakes and pastries to Nairobi. The bakery was built on the belief that great baking should be accessible — not complicated, not overpriced, just honest and delicious.</p>
+        <p>Every product that leaves our kitchen is a reflection of that commitment. From the first order to the hundredth, the standard stays the same.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Get In Touch -->
+<section class="py-5 about-contact-section">
   <div class="container text-center">
     <h2 class="mb-4">Get In Touch</h2>
-    <p class="mx-auto" style="max-width: 600px; text-align: left;">We operate online — place your order and we will arrange delivery or pickup in Nairobi.</p>
-    <p>📞 <a href="tel:+254708006147">0708 006 147</a></p>
+    <p>We operate online — place your order and we will arrange delivery or pickup in Nairobi.</p>
+    <p class="mt-2">📞 <a href="tel:+254708006147">0708 006 147</a></p>
     <p>📧 <a href="mailto:arlainenywege41@gmail.com">arlainenywege41@gmail.com</a></p>
-    <p>🛒 Orders: Online only — Nairobi delivery & pickup available</p>
+    <p>🛒 Nairobi delivery &amp; pickup available</p>
     <a href="contact.html" class="btn btn-warning mt-3">Send Us a Message</a>
   </div>
 </section>
@@ -80,7 +131,6 @@
   </p>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="main.js"></script>
 
