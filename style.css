@@ -497,3 +497,49 @@ body.dark-mode .menu-section-label h2 {
 .gallery-item:hover .gallery-overlay {
   opacity: 1;
 }
+* ========================
+   CONTACT PAGE
+======================== */
+.contact-info-item {
+  margin-bottom: 1.5rem;
+}
+ 
+.contact-info-item h5 {
+  font-weight: 600;
+  color: #1a1208;
+  margin-bottom: 0.2rem;
+}
+ 
+.contact-info-item p {
+  color: #6b5c44;
+  margin: 0;
+}
+ 
+.contact-info-item a {
+  color: #b8965a;
+  text-decoration: none;
+}
+ 
+.contact-info-item a:hover {
+  text-decoration: underline;
+}
+ 
+.form-control {
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+ 
+.form-control:focus {
+  border-color: #b8965a;
+  box-shadow: 0 0 0 3px rgba(184,150,90,0.15);
+}
+ 
+.form-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #1a1208;
+}
+ 
