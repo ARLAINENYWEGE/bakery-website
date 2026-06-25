@@ -748,3 +748,8 @@ body.dark-mode .menu-section-label h2 {
   font-size: 0.9rem;
   text-align: center;
 }
+.carousel-img {  height: 450px; object-fit: cover; }
+.carousel-caption { background-color: rgba(26,18,8,0.65); border-radius: 8px; padding: 1rem 1.5rem; bottom: 30px; }
+.carousel-caption h5 { font-family: Georgia, serif; font-size: 1.4rem; color: #f7f2ea; }
+.carousel-caption p { color: #d9cdb8; font-size: 0.9rem; text-align: center; }
+.carousel-indicators button { background-color: #b8965a !important; }
